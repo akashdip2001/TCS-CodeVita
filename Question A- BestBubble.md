@@ -1,5 +1,7 @@
+# BestBubble Problem
+
 ```md
-# BestBubble
+# BestBubble Problem
 
 ## Problem Description
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. The problem with bubble sort is its worst case scenario. When the smallest element is in the last position, it takes more time to sort in ascending order, but less time to sort in descending order.
@@ -65,17 +67,10 @@ For descending order:
 Total swaps = 4.
 
 The best way is to sort in descending order, which requires 4 swaps.
-```
 
-## Approach
+---
 
-### 1. Sorting the Array in Ascending and Descending Orders
-- Use Bubble Sort to count the number of swaps required for both ascending and descending order.
-  
-### 2. Comparison
-- Compare the number of swaps for both cases and return the minimum.
-```
-Here’s a Python implementation of Bubble Sort with the swap count for both ascending and descending order to solve the "BestBubble" problem:
+## Python Code Solution
 
 ```python
 def bubble_sort(arr, reverse=False):
@@ -109,6 +104,8 @@ arr = list(map(int, input().split()))
 print(min_swaps_to_beautiful(arr))
 ```
 
+---
+
 ### Explanation:
 - `bubble_sort(arr, reverse)`: This function sorts the array either in ascending or descending order based on the `reverse` flag. It counts the number of swaps performed during the sorting process.
 - `min_swaps_to_beautiful(arr)`: This function creates two copies of the input array: one for sorting in ascending order and another for descending. It returns the minimum of the two swap counts.
@@ -127,3 +124,4 @@ The output will be:
 ```
 
 This shows that it takes fewer swaps to sort the array in descending order (1 swap) compared to ascending order (9 swaps).
+```
