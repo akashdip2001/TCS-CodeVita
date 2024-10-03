@@ -1,5 +1,3 @@
-Here’s the "GoodString" problem formatted in `.md` for GitHub:
-
 ```md
 # GoodString Problem
 
@@ -126,4 +124,3 @@ print(total_distance(good_string, name))
 2. **total_distance**: This function calculates the total distance for converting a student's name to a good name, based on the rules given.
 ```
 
-You can now save this solution in a `.md` file named `GoodString.md` for your GitHub repository! Let me know if you need any modifications.
